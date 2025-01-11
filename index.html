@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+    <title>Welcome to My Homepage</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <h1>Welcome to My Homepage</h1>
+
+    <h3>Personal Information</h3>
+
+    <div class="info-box">
+        <div class="column">
+            <label for="name">Name:</label>
+            <input type="text"  pattern="[A-Za-z]+" 
+                   title="Only alphabetic characters are allowed" placeholder="Rim" required 
+                   oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '');"> 
+
+            <label for="middle-initial">Middle Initial:</label>
+            <input type="text" pattern="[A-Za-z]" 
+                   title="Only a single alphabetic character is allowed" placeholder="Samir" required 
+                   oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '').slice(0,1);"> 
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" pattern="[A-Za-z]+" 
+                   title="Only alphabetic characters are allowed" placeholder="Tafech" required 
+                   oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '');"> 
+
+            <label for="country">I am from:</label>
+            <select id="country" name="country" required>
+                <option value="Lebanon" selected>Lebanon</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="Spain">Spain</option>
+                <option value="USA">USA</option>
+            </select>
+        </div>
+
+        <div class="column">
+            <label for="matriculation">Matriculation:</label>
+            <input type="text" pattern="^\d+$" 
+                   title="Only numeric values are allowed" placeholder="100003057" required 
+                   oninput="this.value = this.value.replace(/[^0-9]/g, '');"> 
+
+            <label for="semester">2 - Semester:</label>
+            <select id="semester" name="semester" required>
+                <option value="Winter">Winter</option>
+                <option value="Summer">Summer</option>
+            </select>
+
+            <label for="program">3 - Program:</label>
+            <select id="program" name="program" required>
+                <option value="Master's in Big Data and AI" selected>Master's in Big Data and AI</option>
+                <option value="Master's in Computer Science">Master's in Computer Science</option>
+                <option value="Master's in Data Engineering and Analytics">Master's in Data Engineering and Analytics</option>
+                <option value="Master's in Visual and Interactive Media Design">Master's in Visual and Interactive Media Design</option>
+            </select>
+
+            <label for="start-date">4 - Start in:</label>
+            <input type="date" value="2024-10-01" required>
+        </div>
+    </div>
+
+    
+    <h3>I've heard about this graduate program from:</h3>
+    <div class="checkbox-group">
+        <label>
+            <input type="checkbox" name="source" value="Media"> Media
+        </label>
+        <label>
+            <input type="checkbox" name="source" value="Ad"> Ad
+        </label>
+        <label>
+            <input type="checkbox" name="source" value="Agency"> Agency
+        </label>
+        <label>
+            <input type="checkbox" name="source" value="Other"> Other
+        </label>
+    </div>
+
+
+
+    <h3>When I finish my studies, I will:</h3>
+    <div class="radio-group">
+        <label>
+            <input type="radio" name="future-plans" value="Return to my country"> Return to my country
+        </label>
+        <label>
+            <input type="radio" name="future-plans" value="Find a job in Europe"> Find a job in Europe
+        </label>
+        <label>
+            <input type="radio" name="future-plans" value="Do practical training and decide"> Do the practical training and then decide
+        </label>
+    </div>
+
+    <h4>Feedback for the course:</h4>
+    <textarea name="feedback" rows="5" placeholder="It's was nice learning about Software Development" required></textarea>
+    <h3>I will write a paragraph for each methodology of <a href="https://aws.amazon.com/what-is/sdlc/" target="_blank">SDLC</a>. There are many of them but I will suggest a few.<br>My suggestion and reasons are as follows:</h3>
+<div class="list-section">
+    <ol type="A">
+        <li>Waterfall Model:Waterfall model applies a step by step approach, each phase should be completed before moving to the next one. These phases usually include Requirements, Design, Development, Testing, Deployment, and Maintenance. this model is considered one of the oldest and it works best  if the project is clear and with fixed requirements. the advantage of using Waterfall is its clear structure and easy documentation.</li>
+        <li>Agile Model:Agile model is more flexible to work with since you can update and make changes , this is because Agile breaks the project into smaller pieces called "sprints" which makes it easier in case changes are needed. 
+        </li>
+        <li>RAD (Rapid Application Development):RAD doesn't need lots of planning, starts by a basic version and after reviewing with the user
+            changes will occurs. RAD is not suitable for big and complex projects since it requires less planning and depends on user feedback.
+            </li>
+    </ol>
+</div>
+<h3>
+    Among so many SDLC methodologies the ones that are in the Agile Classification are better. 
+    Among Agile SDLC Methods, I have also a few Suggestions:
+</h3>
+
+<div class="list-section">
+    <ol type="A">
+        <li>Scrum ​</li>
+        <li>Extreme Programming (XP) ​</li>
+        <li>Adaptive Software Development (ASD) ​</li>
+        <li>Crystal Clear ​</li>
+    </ol>
+</div>
+
+<h3>
+    In this software development and application course of 
+    <a href="https://www.srh-berlin.de/en/" target="_blank">SRH</a> we learned the following:
+</h3>
+
+<div class="list-section">
+    <ol type="a">
+        <li>Basic Computer Concepts and Programming Concepts</li>
+        <li>Overview of Software Development</li>
+        <li>Strings, User defined data structures: Structs</li>
+        <li>Data Structures </li>
+        <li>Introduction to Web Development and Databases</li>
+    </ol>
+    <h3>I have used <a href="https://www.w3schools.com/css/" target="_blank">CSS</a> in this webpage, and there are 3 ways to include CSS in a webpage as follows:</h3>
+    <ol type="a">
+        <li>Inline when adding style for each element</li>
+        <li>Internal when using  style inside the head</li>
+        <li>External: when creating a seperated file style.css</li>
+    </ol>
+    
+    <h3>The reasons CSS is used in a webpage are:</h3>
+    <ol>
+        <li>Style and Format</li>
+        <li>Better user experience</li>
+        <li>Consistency</li>
+    </ol>
+    
+    <h3>We also use <a href="https://www.w3schools.com/js/" target="_blank">JavaScript</a> in webpage development. The main reasons are as follows:</h3>
+    <ol type="a">
+        <li>Interactivity: It makes webpages interactive</li>
+        <li>User Interaction: clicks, typing, or scrolling</li>
+        <li>Improved User Experience: It enables faster, smoother, and more engaging experiences</li>
+        <li>Web Apps Development: It is essential for building modern web applications, powering frameworks like React, Angular, and Vue.js.</li>
+    </ol>
+    
+    <h3>I've done this project myself and accept the consequences if found otherwise.</h3>
+    <form>
+        <p class="email-line">You can reach me at: 
+            <input 
+                type="email" 
+                placeholder="rim.tafesh@hotmail.com" 
+                required 
+                oninput="setCustomValidity('')" 
+                oninvalid="setCustomValidity('Please enter a valid email address.')">
+            
+        </p>
+    </form>
+    
+        
+    
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color:#A8D5BA;
+    display: flex; 
+    flex-direction: column;
+    margin: 30px;
+}
+
+h1 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+h3,h4 {
+    color: #333333;
+}
+
+h2 a, h3 a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+label, p, a, input, select,li {
+    color: #333333; 
+    text-align: left; 
+    font-size: 16px; 
+    margin-left: 0; 
+}
+textarea{
+    font-size: 10px;
+}
+.info-box {
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+}
+
+.column {
+    flex: 1; 
+    padding: 40px;
+    background-color: #e2e2e2;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 30px; 
+}
+
+.checkbox-group label {
+    font-size: 16px;
+    display: flex;
+    gap: 10px; 
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.radio-group label {
+    font-size: 16px; 
+    display: flex;
+    gap: 10px; 
+}
+
+input[type="radio"] {
+    width: auto; 
+    margin-right: 10px; 
+}
+
+textarea {
+    width: 40%;
+    padding: 10px;
+    resize: vertical; 
+}
+
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.list-section {
+    padding: 10px;
+    text-align: left;
+}
+
+.list-section ol {
+    padding-left: 10px;
+    margin-top: -10px;
+}
+
+.list-section li {
+    font-size: 16px; 
+}
+
+.email-line {
+    align-items: center;
+}
+
+.email-line input {
+    width: auto;
+    padding: 5px 10px;
+    font-size: 14px;
+}
